@@ -1,6 +1,6 @@
 #lang racket
 
-(provide SCAD cube cylinder union scale rotate translate range)
+(provide SCAD cube cylinder union difference scale rotate translate range)
 
 (require racket/format)
 (require racket/string)
@@ -69,6 +69,7 @@
         ))))
 
 (defmodifier union)
+(defmodifier difference)
 (defmodifier scale)
 (defmodifier rotate)
 (defmodifier translate)
